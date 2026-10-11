@@ -1,0 +1,68 @@
+[
+  {
+    "block": "regularizacion_L2",
+    "command": "python train.py --C 0.01 --l1-ratio 0 --solver lbfgs --max-iter 1000 --tol 0.0001 --seed 42 --test-size 0.2 --cv-folds 5 --experiment TC5061_Experimentacion_BoldoAlan_Wine --output outputs",
+    "execution": 1,
+    "role": "comparacion"
+  },
+  {
+    "block": "regularizacion_L2",
+    "command": "python train.py --C 0.1 --l1-ratio 0 --solver lbfgs --max-iter 1000 --tol 0.0001 --seed 42 --test-size 0.2 --cv-folds 5 --experiment TC5061_Experimentacion_BoldoAlan_Wine --output outputs",
+    "execution": 2,
+    "role": "comparacion"
+  },
+  {
+    "block": "baseline",
+    "command": "python train.py --C 1 --l1-ratio 0 --solver lbfgs --max-iter 1000 --tol 0.0001 --seed 42 --test-size 0.2 --cv-folds 5 --experiment TC5061_Experimentacion_BoldoAlan_Wine --output outputs",
+    "execution": 3,
+    "role": "comparacion"
+  },
+  {
+    "block": "regularizacion_L2",
+    "command": "python train.py --C 10 --l1-ratio 0 --solver lbfgs --max-iter 1000 --tol 0.0001 --seed 42 --test-size 0.2 --cv-folds 5 --experiment TC5061_Experimentacion_BoldoAlan_Wine --output outputs",
+    "execution": 4,
+    "role": "comparacion"
+  },
+  {
+    "block": "regularizacion_L2",
+    "command": "python train.py --C 100 --l1-ratio 0 --solver lbfgs --max-iter 1000 --tol 0.0001 --seed 42 --test-size 0.2 --cv-folds 5 --experiment TC5061_Experimentacion_BoldoAlan_Wine --output outputs",
+    "execution": 5,
+    "role": "comparacion"
+  },
+  {
+    "block": "optimizador",
+    "command": "python train.py --C 1 --l1-ratio 0 --solver newton-cg --max-iter 1000 --tol 0.0001 --seed 42 --test-size 0.2 --cv-folds 5 --experiment TC5061_Experimentacion_BoldoAlan_Wine --output outputs",
+    "execution": 6,
+    "role": "comparacion"
+  },
+  {
+    "block": "optimizador",
+    "command": "python train.py --C 1 --l1-ratio 0 --solver saga --max-iter 1000 --tol 0.0001 --seed 42 --test-size 0.2 --cv-folds 5 --experiment TC5061_Experimentacion_BoldoAlan_Wine --output outputs",
+    "execution": 7,
+    "role": "comparacion"
+  },
+  {
+    "block": "penalizacion_L1",
+    "command": "python train.py --C 1 --l1-ratio 1 --solver saga --max-iter 1000 --tol 0.0001 --seed 42 --test-size 0.2 --cv-folds 5 --experiment TC5061_Experimentacion_BoldoAlan_Wine --output outputs",
+    "execution": 8,
+    "role": "comparacion"
+  },
+  {
+    "block": "penalizacion_L1",
+    "command": "python train.py --C 0.1 --l1-ratio 1 --solver saga --max-iter 1000 --tol 0.0001 --seed 42 --test-size 0.2 --cv-folds 5 --experiment TC5061_Experimentacion_BoldoAlan_Wine --output outputs",
+    "execution": 9,
+    "role": "comparacion"
+  },
+  {
+    "block": "penalizacion_L1",
+    "command": "python train.py --C 0.01 --l1-ratio 1 --solver saga --max-iter 1000 --tol 0.0001 --seed 42 --test-size 0.2 --cv-folds 5 --experiment TC5061_Experimentacion_BoldoAlan_Wine --output outputs",
+    "execution": 10,
+    "role": "comparacion"
+  },
+  {
+    "block": "baseline",
+    "command": "python train.py --C 1 --l1-ratio 0 --solver lbfgs --max-iter 1000 --tol 0.0001 --seed 42 --test-size 0.2 --cv-folds 5 --experiment TC5061_Experimentacion_BoldoAlan_Wine --output outputs",
+    "execution": 11,
+    "role": "repeticion"
+  }
+]

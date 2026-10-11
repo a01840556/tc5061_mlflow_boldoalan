@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+# Base de MLflow, artefactos y evidencias locales: se regeneran con los comandos del README
+outputs*/
+mlruns/
+mlartifacts/
+*.db

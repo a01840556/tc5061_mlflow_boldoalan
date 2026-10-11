@@ -1,0 +1,26 @@
+{
+  "criterion": "max cv_f1_macro_mean; desempates: min cv_f1_macro_std, min C, orden del lote",
+  "metrics": {
+    "control_test_accuracy": 0.3888888888888889,
+    "control_test_f1_macro": 0.18666666666666668,
+    "cv_f1_macro_mean": 0.9859736297264903,
+    "cv_f1_macro_std": 0.019241762560529577,
+    "n_coef_nonzero": 16,
+    "n_iter": 394,
+    "test_accuracy": 0.9722222222222222,
+    "test_balanced_accuracy": 0.9666666666666667,
+    "test_f1_macro": 0.9709618874773139,
+    "train_accuracy": 1.0
+  },
+  "note": "El test ya se observó en la actividad anterior: aquí es descriptivo, no confirmatorio.",
+  "params": {
+    "C": 1.0,
+    "l1_ratio": 1.0,
+    "max_iter": 1000,
+    "seed": 42,
+    "solver": "saga",
+    "tol": 0.0001
+  },
+  "run_id": "02adaf76d4fb4ad39f15ed403da33cf5",
+  "run_name": "C1_l1r1_saga"
+}

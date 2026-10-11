@@ -1,0 +1,5 @@
+# Todo el texto se guarda y se extrae con saltos LF en cualquier sistema operativo, para que los
+# SHA-256 de train.py y requirements.txt que registra cada corrida coincidan con los del repositorio.
+* text=auto eol=lf
+# train.py verifica el SHA-256 de wine.data: Git no debe tocar sus bytes.
+*.data -text

@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "cv_scores_sha256": true,
+    "environment": true,
+    "metrics": true,
+    "params": true,
+    "predictions_sha256": true,
+    "split_sha256": true
+  },
+  "first_run_id": "40bd270313af4dc6af664f207c9bf4cd",
+  "identical_arguments": true,
+  "scope": "mismo entorno, mismos datos y mismos argumentos",
+  "second_run_id": "fe75e4b4155b40828c74d1717683ae9b"
+}
