@@ -103,7 +103,7 @@ Al cerrar el run, el script lo relee desde MLflow y se detiene si parámetros, m
 - `load_data` verifica el SHA-256 de `wine.data`; `.gitattributes` evita que Git cambie sus bytes y mantiene el resto del texto con saltos LF en cualquier sistema.
 - `requirements.txt` fija las versiones y es la vía de instalación; `requirements-lock.txt` es la fotografía completa del entorno de Windows en que se generaron las corridas (incluye paquetes propios de ese sistema).
 - `run_experiments.py` repite el baseline con el mismo comando y compara parámetros, métricas y hashes de las predicciones, de la partición y de los puntajes por fold (`outputs/batches/<lote>/reproducibility.json`).
-- Las 11 corridas reportadas (lote `20261010-211817-d46639`) se generaron con el commit `9061d26` de este repositorio; MLflow guarda ese commit en cada run y `train.py` y `requirements.txt` no cambiaron después.
+- Las 11 corridas reportadas (lote `20261010-211817-d46639`) se generaron con el commit `9061d26` del repositorio local de trabajo, que MLflow guarda en cada run; este repositorio es una importación posterior de los mismos archivos, y los SHA-256 de `train.py` y `requirements.txt` coinciden con los que registra cada corrida.
 
 ## Pruebas
 
